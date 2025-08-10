@@ -14,42 +14,29 @@ An autonomous LLM agent that generates Python parsers for bank PDF statements us
 cd ai-agent-challenge
 ```
 
-2. **Install dependencies**
+2.Install dependencies**
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Add your API key
-Set OPENAI_API_KEY or configure in .env.
+3. **Add your API key**
+```
+Set CEREBRAS_API_KEY or configure in .env.
+Note: I  used the cerebras instead of groq here 
+```
+ 
+5. **Run the agent**
 
-4. Run the agent
-
+```
 python agent.py --target icici
+```
 
 
-Run the agent
-
-bash
-Copy
-Edit
-python agent.py --target icici
-Inspect results
-Generated parser is saved at:
-
-bash
-Copy
-Edit
-custom_parsers/icici_parser.py
-Run tests:
-
-bash
-Copy
-Edit
-pytest tests/test_icici.py
 
 
-🧠  Agent Architecture Diagram
+##🧠  Agent Architecture Diagram
+```
 ┌────────────┐
 │ plan       │ ← Analyze task
 └────┬───────┘
@@ -65,10 +52,10 @@ pytest tests/test_icici.py
 ┌────────────┐
 │ self-fix   │ ← Retry with feedback
 └────────────┘
+ ``` 
 
-
-🧰 Project Structure
-.
+## 🧰 Project Structure
+```
 project-root/
 ├── agent.py
 ├── keys.py                # API keys storage
@@ -82,12 +69,5 @@ project-root/
 │   └── graph.py
 └── utils/
     └── helpers.py
+```
 
-
-graph TD
-    Plan[AI Code Generation] --> Execute[Code Execution]
-    Execute --> Test[Test Validation]
-    Test --> Decision{Success?}
-    Decision -- No --> Plan
-
-    Decision -- Yes --> End
