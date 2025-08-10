@@ -10,7 +10,7 @@ An autonomous LLM agent that generates Python parsers for bank PDF statements us
 
 1. **Clone the repo**
 ```bash
-git clone https://github.com/your-fork/ai-agent-challenge.git
+[git clone https://github.com/your-fork/ai-agent-challenge.git](https://github.com/Agaramsaikrishna/Agent-as-Coder.git)
 cd ai-agent-challenge
 ```
 
@@ -89,4 +89,5 @@ graph TD
     Execute --> Test[Test Validation]
     Test --> Decision{Success?}
     Decision -- No --> Plan
+
     Decision -- Yes --> End
