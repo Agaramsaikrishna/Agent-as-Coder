@@ -1,7 +1,3 @@
-# ai-agent-challenge
-Coding agent challenge which write custom parsers for Bank statement PDF.
-
-
 # 🧠 Agent-as-Coder: Bank Statement Parser
 
 An autonomous LLM agent that generates Python parsers for bank PDF statements using minimal supervision.
@@ -100,6 +96,7 @@ The project currently supports only certain banks based on data availability.
 Parsers are tailored to the CSV schema and PDF format of each bank.
 
 Customize or extend by adding new bank folders under data/ with sample PDFs and expected CSV results.
+
 
 
 
