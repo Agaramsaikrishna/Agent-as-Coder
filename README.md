@@ -22,7 +22,7 @@ Minimal manual intervention required — runs autonomously until success or max 
 
 1. **Clone the repo**
 ```bash
-[git clone https://github.com/your-fork/ai-agent-challenge.git](https://github.com/Agaramsaikrishna/Agent-as-Coder.git)
+https://github.com/Agaramsaikrishna/Agent-as-Coder.git
 cd ai-agent-challenge
 ```
 
@@ -100,6 +100,7 @@ The project currently supports only certain banks based on data availability.
 Parsers are tailored to the CSV schema and PDF format of each bank.
 
 Customize or extend by adding new bank folders under data/ with sample PDFs and expected CSV results.
+
 
 
 
