@@ -30,8 +30,8 @@ pip install -r requirements.txt
 
 3. **Add your API key**
 ```
-Set CEREBRAS_API_KEY or configure in .env.
-Note: I  used the cerebras instead of groq here 
+Set GEMINI_API_KEY or configure in .env.
+
 ```
  
 5. **Run the agent**
@@ -96,6 +96,7 @@ The project currently supports only certain banks based on data availability.
 Parsers are tailored to the CSV schema and PDF format of each bank.
 
 Customize or extend by adding new bank folders under data/ with sample PDFs and expected CSV results.
+
 
 
 
