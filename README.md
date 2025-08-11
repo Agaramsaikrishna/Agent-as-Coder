@@ -77,7 +77,7 @@ pytest tests/test_icici.py
 ```
 project-root/
 ├── agent.py                 # Main entrypoint script for running the agent
-├── keys.py                  # API key storage (not committed)
+├── keys.py                  # API key storage
 ├── data/
 │   └── <bank_name>/
 │       ├── <bank_name>_sample.pdf
@@ -96,6 +96,7 @@ The project currently supports only certain banks based on data availability.
 Parsers are tailored to the CSV schema and PDF format of each bank.
 
 Customize or extend by adding new bank folders under data/ with sample PDFs and expected CSV results.
+
 
 
 
