@@ -13,7 +13,9 @@ import os, re
 from langchain_cerebras import ChatCerebras
 from utils.prompt import create_prompt
 from utils.helpers import test_parser
-from keys import CEREBRAS_API_KEY
+from keys import GEMINI_API_KEY
+from langchain_google_genai import ChatGoogleGenerativeAI
+
 
 def plan_generate(state):
     """
@@ -27,7 +29,7 @@ def plan_generate(state):
     - Adds required imports to generated code
     """
     state["iterations"] += 1
-    llm = ChatCerebras(model="qwen-3-235b-a22b-instruct-2507", temperature=0.4, api_key=CEREBRAS_API_KEY)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0.4, api_key=GEMINI_API_KEY)
 
     prompt = create_prompt(state)
     resp = llm.invoke([("user", prompt)])
