@@ -91,11 +91,9 @@ project-root/
 
 ```
 📝 Notes
-The project currently supports only certain banks based on data availability.
-
 Parsers are tailored to the CSV schema and PDF format of each bank.
-
 Customize or extend by adding new bank folders under data/ with sample PDFs and expected CSV results.
+
 
 
 
